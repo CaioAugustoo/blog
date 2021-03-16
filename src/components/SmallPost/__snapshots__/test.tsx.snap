@@ -1,0 +1,331 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<SmallPost /> should render the date 1`] = `
+.c0 {
+  margin: 4.8rem 0;
+  max-width: 570px;
+}
+
+.c1 {
+  max-width: 100%;
+}
+
+.c2 {
+  margin: 1.6rem 0;
+}
+
+.c3 {
+  font-size: 3rem;
+  line-height: 1.2;
+  margin-bottom: 1.6rem;
+  font-weight: 400;
+}
+
+.c3:hover a {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.c5 {
+  font-size: 1.8rem;
+  line-height: 1.625;
+  margin: 1.6rem 0;
+}
+
+.c4 {
+  font-size: 1.8rem;
+}
+
+@media (max-width:1250px) {
+  .c0 {
+    max-width: 500px;
+  }
+}
+
+@media (max-width:1069px) {
+  .c0 {
+    max-width: 450px;
+  }
+}
+
+@media (max-width:965px) {
+  .c0 {
+    max-width: 400px;
+  }
+}
+
+@media (max-width:865px) {
+  .c0 {
+    max-width: 100%;
+    margin: 2.4rem 0;
+  }
+}
+
+@media (max-width:765px) {
+  .c3 {
+    font-size: 3.6rem;
+  }
+}
+
+<div
+  class="c0"
+>
+  <a
+    aria-label="From Server-side Rendering to Static Generation"
+    href="/post/testando-projeto"
+  >
+    <img
+      alt="From Server-side Rendering to Static Generation"
+      class="c1"
+      src="https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+    />
+  </a>
+  <div
+    class="c2"
+  >
+    <div>
+      <h3
+        class="c3"
+      >
+        <a
+          aria-label="From Server-side Rendering to Static Generation"
+          href="/post/testando-projeto"
+          title="From Server-side Rendering to Static Generation"
+        >
+          From Server-side Rendering to Static Generation
+        </a>
+      </h3>
+      <time
+        class="c4"
+      >
+        May 21, 2020
+      </time>
+    </div>
+    <p
+      class="c5"
+    >
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Praesent elementum facilisis leo vel fringilla est ullamcorper eget. At imperdiet dui accumsan sit amet nulla facilisi morbi tempus.
+    </p>
+  </div>
+</div>
+`;
+
+exports[`<SmallPost /> should render the excerpt 1`] = `
+.c0 {
+  margin: 4.8rem 0;
+  max-width: 570px;
+}
+
+.c1 {
+  max-width: 100%;
+}
+
+.c2 {
+  margin: 1.6rem 0;
+}
+
+.c3 {
+  font-size: 3rem;
+  line-height: 1.2;
+  margin-bottom: 1.6rem;
+  font-weight: 400;
+}
+
+.c3:hover a {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.c5 {
+  font-size: 1.8rem;
+  line-height: 1.625;
+  margin: 1.6rem 0;
+}
+
+.c4 {
+  font-size: 1.8rem;
+}
+
+@media (max-width:1250px) {
+  .c0 {
+    max-width: 500px;
+  }
+}
+
+@media (max-width:1069px) {
+  .c0 {
+    max-width: 450px;
+  }
+}
+
+@media (max-width:965px) {
+  .c0 {
+    max-width: 400px;
+  }
+}
+
+@media (max-width:865px) {
+  .c0 {
+    max-width: 100%;
+    margin: 2.4rem 0;
+  }
+}
+
+@media (max-width:765px) {
+  .c3 {
+    font-size: 3.6rem;
+  }
+}
+
+<div
+  class="c0"
+>
+  <a
+    aria-label="From Server-side Rendering to Static Generation"
+    href="/post/testando-projeto"
+  >
+    <img
+      alt="From Server-side Rendering to Static Generation"
+      class="c1"
+      src="https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+    />
+  </a>
+  <div
+    class="c2"
+  >
+    <div>
+      <h3
+        class="c3"
+      >
+        <a
+          aria-label="From Server-side Rendering to Static Generation"
+          href="/post/testando-projeto"
+          title="From Server-side Rendering to Static Generation"
+        >
+          From Server-side Rendering to Static Generation
+        </a>
+      </h3>
+      <time
+        class="c4"
+      >
+        May 21, 2020
+      </time>
+    </div>
+    <p
+      class="c5"
+    >
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Praesent elementum facilisis leo vel fringilla est ullamcorper eget. At imperdiet dui accumsan sit amet nulla facilisi morbi tempus.
+    </p>
+  </div>
+</div>
+`;
+
+exports[`<SmallPost /> should render the post title 1`] = `
+.c0 {
+  margin: 4.8rem 0;
+  max-width: 570px;
+}
+
+.c1 {
+  max-width: 100%;
+}
+
+.c2 {
+  margin: 1.6rem 0;
+}
+
+.c3 {
+  font-size: 3rem;
+  line-height: 1.2;
+  margin-bottom: 1.6rem;
+  font-weight: 400;
+}
+
+.c3:hover a {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.c5 {
+  font-size: 1.8rem;
+  line-height: 1.625;
+  margin: 1.6rem 0;
+}
+
+.c4 {
+  font-size: 1.8rem;
+}
+
+@media (max-width:1250px) {
+  .c0 {
+    max-width: 500px;
+  }
+}
+
+@media (max-width:1069px) {
+  .c0 {
+    max-width: 450px;
+  }
+}
+
+@media (max-width:965px) {
+  .c0 {
+    max-width: 400px;
+  }
+}
+
+@media (max-width:865px) {
+  .c0 {
+    max-width: 100%;
+    margin: 2.4rem 0;
+  }
+}
+
+@media (max-width:765px) {
+  .c3 {
+    font-size: 3.6rem;
+  }
+}
+
+<div
+  class="c0"
+>
+  <a
+    aria-label="From Server-side Rendering to Static Generation"
+    href="/post/testando-projeto"
+  >
+    <img
+      alt="From Server-side Rendering to Static Generation"
+      class="c1"
+      src="https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+    />
+  </a>
+  <div
+    class="c2"
+  >
+    <div>
+      <h3
+        class="c3"
+      >
+        <a
+          aria-label="From Server-side Rendering to Static Generation"
+          href="/post/testando-projeto"
+          title="From Server-side Rendering to Static Generation"
+        >
+          From Server-side Rendering to Static Generation
+        </a>
+      </h3>
+      <time
+        class="c4"
+      >
+        May 21, 2020
+      </time>
+    </div>
+    <p
+      class="c5"
+    >
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Praesent elementum facilisis leo vel fringilla est ullamcorper eget. At imperdiet dui accumsan sit amet nulla facilisi morbi tempus.
+    </p>
+  </div>
+</div>
+`;
