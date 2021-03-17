@@ -8,6 +8,7 @@ export const Wrapper = styled.div`
 
 export const CoverImage = styled.img`
   max-width: 100%;
+  box-shadow: 0 5px 70px rgb(0 0 0 / 12%);
 `
 
 export const PostContent = styled.div`
