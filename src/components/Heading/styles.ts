@@ -1,19 +1,12 @@
 import styled, { css, DefaultTheme } from 'styled-components'
-import media from 'styled-media-query'
 import { HeadingProps } from '.'
 
-const wrapperModifiers = {
+const headingModifiers = {
   small: (theme: DefaultTheme) => css`
     font-size: ${theme.font.sizes.medium};
-    &::after {
-      width: 3rem;
-    }
   `,
   medium: (theme: DefaultTheme) => css`
-    font-size: ${theme.font.sizes.xlarge};
-    ${media.greaterThan('medium')`
-      font-size: ${theme.font.sizes.xxlarge};
-    `}
+    font-size: ${theme.font.sizes.xxxlarge};
   `,
 
   huge: (theme: DefaultTheme) => css`
@@ -21,8 +14,13 @@ const wrapperModifiers = {
   `
 }
 
-export const Wrapper = styled.h2<HeadingProps>`
+export const Heading = styled.h2<HeadingProps>`
   ${({ theme, size }) => css`
-    ${!!size && wrapperModifiers[size](theme)}
+    ${!!size && headingModifiers[size](theme)};
+    margin: ${theme.spacings.medium} 0;
+
+    @media (max-width: 765px) {
+      font-size: ${theme.font.sizes.xxlarge};
+    }
   `}
 `

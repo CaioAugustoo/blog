@@ -11,7 +11,7 @@ export type BigPostProps = {
 
 const BigPost = ({ title, date, excerpt, imageUrl, slug }: BigPostProps) => (
   <S.Wrapper>
-    <Link href={slug}>
+    <Link href={`/post/${slug}`}>
       <a aria-label={title}>
         <S.CoverImage src={imageUrl} alt={title} />
       </a>
@@ -20,7 +20,7 @@ const BigPost = ({ title, date, excerpt, imageUrl, slug }: BigPostProps) => (
     <S.PostContent>
       <div>
         <S.PostTitle>
-          <Link href={slug}>
+          <Link href={`/post/${slug}`}>
             <a aria-label={title} title={title}>
               {title}
             </a>

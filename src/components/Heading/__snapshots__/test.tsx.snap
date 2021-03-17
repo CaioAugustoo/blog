@@ -1,0 +1,58 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Heading /> should render a heading with a huge size 1`] = `
+.c0 {
+  font-size: 10.0rem;
+  margin: 3.2rem 0;
+}
+
+@media (max-width:765px) {
+  .c0 {
+    font-size: 4.4rem;
+  }
+}
+
+<h2
+  class="c0"
+>
+  blog.
+</h2>
+`;
+
+exports[`<Heading /> should render a heading with a medium size 1`] = `
+.c0 {
+  font-size: 7.2rem;
+  margin: 3.2rem 0;
+}
+
+@media (max-width:765px) {
+  .c0 {
+    font-size: 4.4rem;
+  }
+}
+
+<h2
+  class="c0"
+>
+  blog.
+</h2>
+`;
+
+exports[`<Heading /> should render a heading with a small size 1`] = `
+.c0 {
+  font-size: 1.6rem;
+  margin: 3.2rem 0;
+}
+
+@media (max-width:765px) {
+  .c0 {
+    font-size: 4.4rem;
+  }
+}
+
+<h2
+  class="c0"
+>
+  blog.
+</h2>
+`;
