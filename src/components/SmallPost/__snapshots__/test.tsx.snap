@@ -8,6 +8,7 @@ exports[`<SmallPost /> should render the date 1`] = `
 
 .c1 {
   max-width: 100%;
+  box-shadow: 0 5px 70px rgb(0 0 0 / 5%);
 }
 
 .c2 {
@@ -72,7 +73,7 @@ exports[`<SmallPost /> should render the date 1`] = `
 >
   <a
     aria-label="From Server-side Rendering to Static Generation"
-    href="/post/testando-projeto"
+    href="/post//post/testando-projeto"
   >
     <img
       alt="From Server-side Rendering to Static Generation"
@@ -89,7 +90,7 @@ exports[`<SmallPost /> should render the date 1`] = `
       >
         <a
           aria-label="From Server-side Rendering to Static Generation"
-          href="/post/testando-projeto"
+          href="/post//post/testando-projeto"
           title="From Server-side Rendering to Static Generation"
         >
           From Server-side Rendering to Static Generation
@@ -108,7 +109,7 @@ exports[`<SmallPost /> should render the date 1`] = `
     </p>
   </div>
 </div>
-`;
+`
 
 exports[`<SmallPost /> should render the excerpt 1`] = `
 .c0 {
@@ -118,6 +119,7 @@ exports[`<SmallPost /> should render the excerpt 1`] = `
 
 .c1 {
   max-width: 100%;
+  box-shadow: 0 5px 70px rgb(0 0 0 / 5%);
 }
 
 .c2 {
@@ -182,7 +184,7 @@ exports[`<SmallPost /> should render the excerpt 1`] = `
 >
   <a
     aria-label="From Server-side Rendering to Static Generation"
-    href="/post/testando-projeto"
+    href="/post//post/testando-projeto"
   >
     <img
       alt="From Server-side Rendering to Static Generation"
@@ -199,7 +201,7 @@ exports[`<SmallPost /> should render the excerpt 1`] = `
       >
         <a
           aria-label="From Server-side Rendering to Static Generation"
-          href="/post/testando-projeto"
+          href="/post//post/testando-projeto"
           title="From Server-side Rendering to Static Generation"
         >
           From Server-side Rendering to Static Generation
@@ -218,7 +220,7 @@ exports[`<SmallPost /> should render the excerpt 1`] = `
     </p>
   </div>
 </div>
-`;
+`
 
 exports[`<SmallPost /> should render the post title 1`] = `
 .c0 {
@@ -228,6 +230,7 @@ exports[`<SmallPost /> should render the post title 1`] = `
 
 .c1 {
   max-width: 100%;
+  box-shadow: 0 5px 70px rgb(0 0 0 / 5%);
 }
 
 .c2 {
@@ -292,7 +295,7 @@ exports[`<SmallPost /> should render the post title 1`] = `
 >
   <a
     aria-label="From Server-side Rendering to Static Generation"
-    href="/post/testando-projeto"
+    href="/post//post/testando-projeto"
   >
     <img
       alt="From Server-side Rendering to Static Generation"
@@ -309,7 +312,7 @@ exports[`<SmallPost /> should render the post title 1`] = `
       >
         <a
           aria-label="From Server-side Rendering to Static Generation"
-          href="/post/testando-projeto"
+          href="/post//post/testando-projeto"
           title="From Server-side Rendering to Static Generation"
         >
           From Server-side Rendering to Static Generation
@@ -328,4 +331,4 @@ exports[`<SmallPost /> should render the post title 1`] = `
     </p>
   </div>
 </div>
-`;
+`

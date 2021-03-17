@@ -14,6 +14,7 @@ export const Wrapper = styled.main`
 
 export const CoverImage = styled.img`
   max-width: 100%;
+  box-shadow: 0 5px 70px rgb(0 0 0 / 12%);
 `
 
 export const Content = styled.div`
@@ -24,15 +25,29 @@ export const Content = styled.div`
       margin: ${theme.spacings.xsmall} auto;
     }
 
-    blockquote {
-      border-left-width: 4px;
-      border: 1px solid #a0aec0;
-      background-color: #edf2f7;
-      padding: 1rem 1.5rem;
+    a {
+      color: #0070f3;
 
-      p {
-        font-style: italic;
+      &:hover {
+        text-decoration: underline;
       }
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      margin: ${theme.spacings.small} 0;
+    }
+
+    blockquote {
+      border-left: 4px solid #000;
+      padding: 1rem 1.5rem;
+      font-style: italic;
+      font-size: 1.9rem;
+      margin: ${theme.spacings.small} 0;
     }
 
     .code {
@@ -54,6 +69,11 @@ export const Content = styled.div`
       }
     }
 
+    .intro {
+      margin: ${theme.spacings.xsmall} 0;
+      border-bottom: 1px solid #d1dce5;
+    }
+
     max-width: 66rem;
     margin: ${theme.spacings.xxlarge} auto;
   `}
@@ -63,8 +83,34 @@ export const PostContentWrapper = styled.article`
   ${({ theme }) => css`
     padding: ${theme.spacings.medium} 0 ${theme.spacings.xxlarge} 0;
 
+    img {
+      margin: 0 auto;
+    }
+
     @media (max-width: 765px) {
       padding: ${theme.spacings.xsmall} 0;
+    }
+  `}
+`
+
+export const BackToHome = styled.div`
+  ${({ theme }) => css`
+    margin-bottom: 60px;
+    display: block;
+    width: fit-content;
+    height: fit-content;
+
+    a {
+      h2 {
+        font-size: ${theme.font.sizes.xlarge};
+        @media (max-width: 765px) {
+          font-size: 3rem;
+        }
+      }
+
+      &:hover {
+        text-decoration: underline;
+      }
     }
   `}
 `
