@@ -1,4 +1,4 @@
-import { createGlobalStyle, css } from 'styled-components'
+import styled, { createGlobalStyle, css } from 'styled-components'
 
 const GlobalStyles = createGlobalStyle`
   * {
@@ -23,8 +23,23 @@ const GlobalStyles = createGlobalStyle`
     }
     a {
       text-decoration: none;
+      color: ${theme.colors.black};
+    }
+
+    img {
+      display: block;
+      max-width: 100%:
+      height: auto;
     }
   `}
 `
 
 export default GlobalStyles
+
+export const Container = styled.div`
+  ${({ theme }) => css`
+    max-width: ${theme.grid.container};
+    margin: 0 auto;
+    padding: 0 ${theme.spacings.xsmall};
+  `}
+`

@@ -1,5 +1,22 @@
-import Heading from 'components/Heading'
+import { GetStaticProps } from 'next'
 
-export default function Home() {
-  return <Heading size="huge">Blog.</Heading>
+import client from 'graphql/client'
+import { GET_HERO_POST, GET_HOME_POSTS } from 'graphql/queries'
+
+import Home, { HomeProps } from 'Templates/Home'
+
+export default function Index({ posts, heroPosts }: HomeProps) {
+  return <Home posts={posts} heroPosts={heroPosts[0]} />
+}
+
+export const getStaticProps: GetStaticProps = async () => {
+  const { posts } = await client.request(GET_HOME_POSTS, { first: 4 })
+  const { heroPosts } = await client.request(GET_HERO_POST)
+
+  return {
+    props: {
+      posts,
+      heroPosts
+    }
+  }
 }

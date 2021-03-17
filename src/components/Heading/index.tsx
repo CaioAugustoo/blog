@@ -6,7 +6,7 @@ export type HeadingProps = {
 }
 
 const Heading = ({ children, size = 'medium' }: HeadingProps) => (
-  <S.Wrapper size={size}>{children}</S.Wrapper>
+  <S.Heading size={size}>{children}</S.Heading>
 )
 
 export default Heading
