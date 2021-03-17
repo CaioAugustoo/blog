@@ -5,7 +5,7 @@ export const Wrapper = styled.footer`
     padding: 60px 0;
     text-align: center;
     width: 100%;
-    background: ${theme.colors.lightBg};
+    background: #fafafa;
     border-top: 1px solid #e2e8f0;
 
     h2 {

@@ -1,3 +1,4 @@
+import Footer from 'components/Footer'
 import client from 'graphql/client'
 import { GET_POST_BY_SLUG } from 'graphql/queries'
 import { GetStaticProps } from 'next'
@@ -23,7 +24,12 @@ export default function Post({ posts }: PostsProps) {
 
   if (router.isFallback) return null
 
-  return <PostTemplate posts={posts[0]} />
+  return (
+    <>
+      <PostTemplate posts={posts[0]} />
+      <Footer />
+    </>
+  )
 }
 
 export async function getStaticPaths() {
