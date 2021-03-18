@@ -2,7 +2,7 @@ import useDarkMode from 'use-dark-mode'
 import * as S from './styles'
 
 const DarkModeButton = () => {
-  const darkMode = useDarkMode(false)
+  const darkMode = useDarkMode(true)
 
   return (
     <S.Wrapper
