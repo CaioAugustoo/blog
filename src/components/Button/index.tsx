@@ -1,8 +1,6 @@
-import * as S from './styles'
+import { ButtonProps } from 'types/api'
 
-export type ButtonProps = {
-  children: React.ReactNode
-}
+import * as S from './styles'
 
 const Button = ({ children }: ButtonProps) => <S.Wrapper>{children}</S.Wrapper>
 

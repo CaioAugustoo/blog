@@ -63,5 +63,30 @@ export const PostExcerpt = styled.p`
 export const Date = styled.time`
   ${({ theme }) => css`
     font-size: ${theme.font.sizes.large};
+    margin-right: ${theme.spacings.xxsmall};
+  `}
+`
+
+export const InfosWrapper = styled.div`
+  ${({ theme }) => css`
+    h2 {
+      font-size: 4.4rem;
+      text-align: center;
+
+      @media (max-width: 765px) {
+        font-size: ${theme.font.sizes.xlarge};
+      }
+    }
+  `}
+`
+
+export const Infos = styled.div`
+  ${({ theme }) => css`
+    display: flex;
+
+    p {
+      margin: 0 ${theme.spacings.xxsmall};
+      font-size: ${theme.font.sizes.large};
+    }
   `}
 `

@@ -8,6 +8,7 @@ export const GET_HOME_POSTS = gql`
       excerpt
       date
       slug
+      minuteRead
       coverImage {
         url
       }
@@ -28,6 +29,7 @@ export const GET_POST_BY_SLUG = gql`
       slug
       date
       title
+      minuteRead
       content {
         html
       }
@@ -51,6 +53,7 @@ export const GET_ALL_POSTS = gql`
       excerpt
       date
       slug
+      minuteRead
       coverImage {
         url
       }

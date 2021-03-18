@@ -4,15 +4,17 @@ export const Wrapper = styled.main`
   > div > h2 {
     letter-spacing: -0.04em;
     line-height: 1;
+    font-size: 4.4rem;
+    text-align: center;
 
     @media (max-width: 765px) {
-      text-align: center;
       line-height: 1.2;
     }
   }
 `
 
 export const CoverImage = styled.img`
+  width: 900px;
   max-width: 100%;
   box-shadow: 0 5px 70px rgb(0 0 0 / 12%);
 `
@@ -85,7 +87,11 @@ export const PostContentWrapper = styled.article`
     padding: ${theme.spacings.medium} 0 ${theme.spacings.xxlarge} 0;
 
     img {
-      margin: 0 auto;
+      margin: 0px auto 120px;
+
+      @media (max-width: 765px) {
+        margin: 0px auto 0px;
+      }
     }
 
     @media (max-width: 765px) {
@@ -96,7 +102,6 @@ export const PostContentWrapper = styled.article`
 
 export const Header = styled.header`
   ${({ theme }) => css`
-    margin: 30px 0 70px 0px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -113,6 +118,33 @@ export const Header = styled.header`
       &:hover {
         text-decoration: underline;
       }
+    }
+  `}
+`
+
+export const InfosWrapper = styled.div`
+  ${({ theme }) => css`
+    margin: ${theme.spacings.xlarge} 0;
+
+    h2 {
+      font-size: 4.4rem;
+      text-align: center;
+
+      @media (max-width: 765px) {
+        font-size: ${theme.font.sizes.xlarge};
+      }
+    }
+  `}
+`
+
+export const Infos = styled.div`
+  ${({ theme }) => css`
+    display: flex;
+    justify-content: center;
+
+    p {
+      margin: 0 ${theme.spacings.xxsmall};
+      font-size: ${theme.font.sizes.large};
     }
   `}
 `

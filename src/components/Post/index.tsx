@@ -1,19 +1,21 @@
-import * as S from './styles'
 import Link from 'next/link'
 
-export type PostProps = {
-  title: string
-  date: string
-  excerpt: string
-  slug: string
-  imageUrl: string
-}
+import * as S from './styles'
 
-const Post = ({ title, date, excerpt, imageUrl, slug }: PostProps) => (
+import { PostProps } from 'types/api'
+
+const Post = ({
+  title,
+  date,
+  excerpt,
+  coverImage,
+  slug,
+  minuteRead
+}: PostProps) => (
   <S.Post>
     <Link href={`/post/${slug}`}>
       <a aria-label={title}>
-        <S.CoverImage src={imageUrl} alt={title} />
+        <S.CoverImage src={coverImage?.url} alt={title} />
       </a>
     </Link>
 
@@ -27,7 +29,11 @@ const Post = ({ title, date, excerpt, imageUrl, slug }: PostProps) => (
           </Link>
         </S.PostTitle>
 
-        <S.Date>{date}</S.Date>
+        <S.InfosWrapper>
+          <S.Infos>
+            <S.Date>{date}</S.Date>·<p>{minuteRead} min leitura</p>
+          </S.Infos>
+        </S.InfosWrapper>
       </div>
       <S.PostExcerpt className="excerpt">{excerpt}</S.PostExcerpt>
     </S.PostContent>
