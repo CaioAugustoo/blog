@@ -24,13 +24,26 @@ export const Header = styled.header`
 export const PostSection = styled.section`
   ${({ theme }) => css`
     margin: ${theme.spacings.xxlarge} auto ${theme.spacings.medium} auto;
+    display: grid;
+    grid-template-areas:
+      'hero hero'
+      'post post'
+      'post post';
+    align-items: stretch;
+    justify-items: center;
+
+    @media (max-width: 765px) {
+      grid-template-areas:
+        'hero'
+        'post'
+        'post';
+    }
 
     > div:first-child {
       max-width: 100%;
-      display: grid;
-      grid-template-columns: 1fr;
+      grid-area: hero;
 
-      > .content {
+      .content {
         display: grid;
         grid-template-columns: 1fr 1fr;
         margin: ${theme.spacings.large} 0;
@@ -56,12 +69,6 @@ export const PostSection = styled.section`
           }
         }
       }
-    }
-
-    > div {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
     }
   `}
 `

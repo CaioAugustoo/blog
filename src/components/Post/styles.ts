@@ -3,7 +3,17 @@ import styled, { css } from 'styled-components'
 export const Post = styled.div`
   ${({ theme }) => css`
     margin: ${theme.spacings.xlarge} 0;
-    max-width: 570px;
+    width: 100%;
+
+    max-width: 600px;
+
+    &:nth-child(3n) {
+      margin-left: auto;
+    }
+
+    &:nth-child(2n) {
+      margin-right: auto;
+    }
 
     @media (max-width: 1250px) {
       max-width: 500px;
@@ -26,6 +36,7 @@ export const Post = styled.div`
 
 export const CoverImage = styled.img`
   max-width: 100%;
+  width: 100%;
   box-shadow: 0 5px 70px rgb(0 0 0 / 5%);
 `
 

@@ -18,7 +18,7 @@ export default function Index({ posts }: PostsProps) {
 }
 
 export const getStaticProps: GetStaticProps = async () => {
-  const { posts } = await client.request(GET_HOME_POSTS, { first: 4 })
+  const { posts } = await client.request(GET_HOME_POSTS, { first: 5 })
 
   return {
     props: {
