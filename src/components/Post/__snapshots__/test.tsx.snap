@@ -3,11 +3,21 @@
 exports[`<Post /> should render the date 1`] = `
 .c0 {
   margin: 4.8rem 0;
-  max-width: 570px;
+  width: 100%;
+  max-width: 600px;
+}
+
+.c0:nth-child(3n) {
+  margin-left: auto;
+}
+
+.c0:nth-child(2n) {
+  margin-right: auto;
 }
 
 .c1 {
   max-width: 100%;
+  width: 100%;
   box-shadow: 0 5px 70px rgb(0 0 0 / 5%);
 }
 
@@ -152,11 +162,21 @@ exports[`<Post /> should render the date 1`] = `
 exports[`<Post /> should render the excerpt 1`] = `
 .c0 {
   margin: 4.8rem 0;
-  max-width: 570px;
+  width: 100%;
+  max-width: 600px;
+}
+
+.c0:nth-child(3n) {
+  margin-left: auto;
+}
+
+.c0:nth-child(2n) {
+  margin-right: auto;
 }
 
 .c1 {
   max-width: 100%;
+  width: 100%;
   box-shadow: 0 5px 70px rgb(0 0 0 / 5%);
 }
 
@@ -301,11 +321,21 @@ exports[`<Post /> should render the excerpt 1`] = `
 exports[`<Post /> should render the post title 1`] = `
 .c0 {
   margin: 4.8rem 0;
-  max-width: 570px;
+  width: 100%;
+  max-width: 600px;
+}
+
+.c0:nth-child(3n) {
+  margin-left: auto;
+}
+
+.c0:nth-child(2n) {
+  margin-right: auto;
 }
 
 .c1 {
   max-width: 100%;
+  width: 100%;
   box-shadow: 0 5px 70px rgb(0 0 0 / 5%);
 }
 
