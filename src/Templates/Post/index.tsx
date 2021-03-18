@@ -1,17 +1,17 @@
-import Heading from 'components/Heading'
-
-import { Container } from 'styles/global'
-import { PostsProps } from 'pages/post/[slug]'
-
-import * as S from './styles'
 import Link from 'next/link'
+
+import Heading from 'components/Heading'
 import DarkModeButton from 'components/DarkmodeButton'
 import Head from 'components/Head'
 
-const PostTemplate = ({ posts }: PostsProps) => {
+import { Container } from 'styles/global'
+import { PostProps } from 'pages/post/[slug]'
+import * as S from './styles'
+
+const PostTemplate = ({ post }: PostProps) => {
   return (
     <>
-      <Head title={posts.seo.title} description={posts.seo.description} />
+      <Head title={post.seo.title} description={post.seo.description} />
       <S.Wrapper>
         <Container>
           <S.Header>
@@ -27,11 +27,11 @@ const PostTemplate = ({ posts }: PostsProps) => {
             </nav>
             <DarkModeButton />
           </S.Header>
-          <Heading size="huge">{posts.title}</Heading>
+          <Heading size="huge">{post.title}</Heading>
           <S.PostContentWrapper>
-            <S.CoverImage src={posts.coverImage.url} alt={posts.title} />
+            <S.CoverImage src={post.coverImage.url} alt={post.title} />
             <S.Content
-              dangerouslySetInnerHTML={{ __html: posts.content.html }}
+              dangerouslySetInnerHTML={{ __html: post.content.html }}
             />
           </S.PostContentWrapper>
         </Container>
