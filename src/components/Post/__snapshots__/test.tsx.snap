@@ -27,13 +27,31 @@ exports[`<Post /> should render the date 1`] = `
   text-decoration: underline;
 }
 
-.c5 {
+.c7 {
   font-size: 1.8rem;
   line-height: 1.625;
   margin: 1.6rem 0;
 }
 
-.c4 {
+.c6 {
+  font-size: 1.8rem;
+  margin-right: 0.8rem;
+}
+
+.c4 h2 {
+  font-size: 4.4rem;
+  text-align: center;
+}
+
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c5 p {
+  margin: 0 0.8rem;
   font-size: 1.8rem;
 }
 
@@ -68,6 +86,12 @@ exports[`<Post /> should render the date 1`] = `
   }
 }
 
+@media (max-width:765px) {
+  .c4 h2 {
+    font-size: 3.6rem;
+  }
+}
+
 <div
   class="c0"
 >
@@ -78,7 +102,6 @@ exports[`<Post /> should render the date 1`] = `
     <img
       alt="From Server-side Rendering to Static Generation"
       class="c1"
-      src="https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
     />
   </a>
   <div
@@ -98,14 +121,27 @@ exports[`<Post /> should render the date 1`] = `
           From Server-side Rendering to Static Generation
         </a>
       </h3>
-      <time
+      <div
         class="c4"
       >
-        May 21, 2020
-      </time>
+        <div
+          class="c5"
+        >
+          <time
+            class="c6"
+          >
+            May 21, 2020
+          </time>
+          ·
+          <p>
+            10
+             min leitura
+          </p>
+        </div>
+      </div>
     </div>
     <p
-      class="c5 excerpt"
+      class="c7 excerpt"
     >
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Praesent elementum facilisis leo vel fringilla est ullamcorper eget. At imperdiet dui accumsan sit amet nulla facilisi morbi tempus.
     </p>
@@ -140,13 +176,31 @@ exports[`<Post /> should render the excerpt 1`] = `
   text-decoration: underline;
 }
 
-.c5 {
+.c7 {
   font-size: 1.8rem;
   line-height: 1.625;
   margin: 1.6rem 0;
 }
 
-.c4 {
+.c6 {
+  font-size: 1.8rem;
+  margin-right: 0.8rem;
+}
+
+.c4 h2 {
+  font-size: 4.4rem;
+  text-align: center;
+}
+
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c5 p {
+  margin: 0 0.8rem;
   font-size: 1.8rem;
 }
 
@@ -181,6 +235,12 @@ exports[`<Post /> should render the excerpt 1`] = `
   }
 }
 
+@media (max-width:765px) {
+  .c4 h2 {
+    font-size: 3.6rem;
+  }
+}
+
 <div
   class="c0"
 >
@@ -191,7 +251,6 @@ exports[`<Post /> should render the excerpt 1`] = `
     <img
       alt="From Server-side Rendering to Static Generation"
       class="c1"
-      src="https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
     />
   </a>
   <div
@@ -211,14 +270,27 @@ exports[`<Post /> should render the excerpt 1`] = `
           From Server-side Rendering to Static Generation
         </a>
       </h3>
-      <time
+      <div
         class="c4"
       >
-        May 21, 2020
-      </time>
+        <div
+          class="c5"
+        >
+          <time
+            class="c6"
+          >
+            May 21, 2020
+          </time>
+          ·
+          <p>
+            10
+             min leitura
+          </p>
+        </div>
+      </div>
     </div>
     <p
-      class="c5 excerpt"
+      class="c7 excerpt"
     >
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Praesent elementum facilisis leo vel fringilla est ullamcorper eget. At imperdiet dui accumsan sit amet nulla facilisi morbi tempus.
     </p>
@@ -253,13 +325,31 @@ exports[`<Post /> should render the post title 1`] = `
   text-decoration: underline;
 }
 
-.c5 {
+.c7 {
   font-size: 1.8rem;
   line-height: 1.625;
   margin: 1.6rem 0;
 }
 
-.c4 {
+.c6 {
+  font-size: 1.8rem;
+  margin-right: 0.8rem;
+}
+
+.c4 h2 {
+  font-size: 4.4rem;
+  text-align: center;
+}
+
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c5 p {
+  margin: 0 0.8rem;
   font-size: 1.8rem;
 }
 
@@ -294,6 +384,12 @@ exports[`<Post /> should render the post title 1`] = `
   }
 }
 
+@media (max-width:765px) {
+  .c4 h2 {
+    font-size: 3.6rem;
+  }
+}
+
 <div
   class="c0"
 >
@@ -304,7 +400,6 @@ exports[`<Post /> should render the post title 1`] = `
     <img
       alt="From Server-side Rendering to Static Generation"
       class="c1"
-      src="https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
     />
   </a>
   <div
@@ -324,14 +419,27 @@ exports[`<Post /> should render the post title 1`] = `
           From Server-side Rendering to Static Generation
         </a>
       </h3>
-      <time
+      <div
         class="c4"
       >
-        May 21, 2020
-      </time>
+        <div
+          class="c5"
+        >
+          <time
+            class="c6"
+          >
+            May 21, 2020
+          </time>
+          ·
+          <p>
+            10
+             min leitura
+          </p>
+        </div>
+      </div>
     </div>
     <p
-      class="c5 excerpt"
+      class="c7 excerpt"
     >
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Praesent elementum facilisis leo vel fringilla est ullamcorper eget. At imperdiet dui accumsan sit amet nulla facilisi morbi tempus.
     </p>

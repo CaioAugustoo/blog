@@ -1,9 +1,6 @@
 import { useEffect } from 'react'
 
-export type HeadProps = {
-  title: string
-  description?: string
-}
+import { HeadProps } from 'types/api'
 
 const Head = ({ title, description }: HeadProps) => {
   useEffect(() => {

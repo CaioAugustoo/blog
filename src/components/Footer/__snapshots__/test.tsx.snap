@@ -13,6 +13,18 @@ exports[`<Footer /> should render the footer 1`] = `
   font-size: 3.6rem;
 }
 
+@media (max-width:765px) {
+  .c0 h2 {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width:765px) {
+  .c0 {
+    padding: 30px 0;
+  }
+}
+
 <footer
   class="c0"
 >

@@ -10,6 +10,14 @@ export const Wrapper = styled.footer`
 
     h2 {
       font-size: ${theme.font.sizes.xlarge};
+
+      @media (max-width: 765px) {
+        font-size: ${theme.font.sizes.medium};
+      }
+    }
+
+    @media (max-width: 765px) {
+      padding: 30px 0;
     }
   `}
 `

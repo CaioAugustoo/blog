@@ -1,9 +1,6 @@
-import * as S from './styles'
+import { HeadingProps } from 'types/api'
 
-export type HeadingProps = {
-  children: React.ReactNode
-  size?: 'small' | 'medium' | 'huge'
-}
+import * as S from './styles'
 
 const Heading = ({ children, size = 'medium' }: HeadingProps) => (
   <S.Heading size={size}>{children}</S.Heading>

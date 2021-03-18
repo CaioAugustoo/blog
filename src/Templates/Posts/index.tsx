@@ -1,47 +1,52 @@
 import DarkModeButton from 'components/DarkmodeButton'
-
+import Head from 'components/Head'
 import Heading from 'components/Heading'
 import Post from 'components/Post'
 
-import Link from 'next/link'
-
-import { Container } from 'styles/global'
-
-import { AllPostProps } from 'Templates/Home'
 import { Header } from 'Templates/Post/styles'
+import { Container } from 'styles/global'
+import { PostsProps } from 'types/api'
 
 import * as S from './styles'
 
-const PostsTemplate = ({ posts }: AllPostProps) => {
+import Link from 'next/link'
+
+const PostsTemplate = ({ posts }: PostsProps) => {
   return (
-    <Container>
-      <Header>
-        <nav>
-          <Link href="/">
-            <a
-              title="Voltar para página inicial"
-              aria-label="Voltar para página inicial"
-            >
-              <Heading>Início</Heading>
-            </a>
-          </Link>
-        </nav>
-        <DarkModeButton />
-      </Header>
-      <Heading size="huge">Todos os posts</Heading>
-      <S.Wrapper>
-        {posts.map(({ id, title, coverImage, date, excerpt, slug }) => (
-          <Post
-            key={id}
-            title={title}
-            imageUrl={coverImage.url}
-            date={date}
-            excerpt={excerpt}
-            slug={slug}
-          />
-        ))}
-      </S.Wrapper>
-    </Container>
+    <>
+      <Head title="Todos os posts" />
+      <Container>
+        <Header>
+          <nav>
+            <Link href="/">
+              <a
+                title="Voltar para página inicial"
+                aria-label="Voltar para página inicial"
+              >
+                <Heading>Início</Heading>
+              </a>
+            </Link>
+          </nav>
+          <DarkModeButton />
+        </Header>
+        <Heading size="huge">Todos os posts</Heading>
+        <S.Wrapper>
+          {posts.map(
+            ({ id, title, coverImage, date, excerpt, slug, minuteRead }) => (
+              <Post
+                key={id}
+                title={title}
+                coverImage={coverImage}
+                date={date}
+                excerpt={excerpt}
+                slug={slug}
+                minuteRead={minuteRead}
+              />
+            )
+          )}
+        </S.Wrapper>
+      </Container>
+    </>
   )
 }
 

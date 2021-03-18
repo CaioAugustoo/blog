@@ -1,35 +1,18 @@
+import { GetStaticProps } from 'next'
+import { useRouter } from 'next/dist/client/router'
+
 import Footer from 'components/Footer'
+import PostTemplate from 'Templates/Post'
 
 import client from 'graphql/client'
 import { GET_POST_BY_SLUG, GET_POSTS_BY_SLUG } from 'graphql/queries'
 
-import { GetStaticProps } from 'next'
-import { useRouter } from 'next/dist/client/router'
+import { PostBySlugProps } from 'types/api'
 
-import PostTemplate from 'Templates/Post'
+export default function Post({ post }: PostBySlugProps) {
+  const { isFallback } = useRouter()
 
-export type PostProps = {
-  post: {
-    seo: {
-      title: string
-      description: string
-    }
-    coverImage: {
-      url: string
-    }
-    slug: string
-    date: string
-    title: string
-    content: {
-      html: string
-    }
-  }
-}
-
-export default function Post({ post }: PostProps) {
-  const router = useRouter()
-
-  if (router.isFallback) return null
+  if (isFallback) return null
 
   return (
     <>

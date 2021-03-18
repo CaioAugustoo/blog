@@ -1,16 +1,16 @@
+import { GetStaticProps } from 'next'
+
 import Footer from 'components/Footer'
-import Head from 'components/Head'
+import HomeTemplate from 'Templates/Home'
 
 import client from 'graphql/client'
 import { GET_HOME_POSTS } from 'graphql/queries'
 
-import { GetStaticProps } from 'next'
-import HomeTemplate, { AllPostProps } from 'Templates/Home'
+import { PostsProps } from 'types/api'
 
-export default function Index({ posts }: AllPostProps) {
+export default function Index({ posts }: PostsProps) {
   return (
     <>
-      <Head title="Início" />
       <HomeTemplate posts={posts} />
       <Footer />
     </>
