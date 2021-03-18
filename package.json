@@ -1,5 +1,5 @@
 {
-  "name": "react-avancado-boilerplate",
+  "name": "caio-blog",
   "version": "1.0.0",
   "private": true,
   "scripts": {
@@ -32,7 +32,8 @@
     "react-dom": "17.0.1",
     "remark": "^13.0.0",
     "remark-html": "^13.0.1",
-    "styled-components": "5.2.1"
+    "styled-components": "5.2.1",
+    "use-dark-mode": "^2.3.1"
   },
   "devDependencies": {
     "@babel/core": "^7.12.10",

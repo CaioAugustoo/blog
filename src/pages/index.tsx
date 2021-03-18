@@ -1,15 +1,17 @@
-import { GetStaticProps } from 'next'
+import Footer from 'components/Footer'
+import Head from 'components/Head'
 
 import client from 'graphql/client'
-import { GET_HERO_POST, GET_HOME_POSTS } from 'graphql/queries'
+import { GET_HOME_POSTS } from 'graphql/queries'
 
-import Home, { HomeProps } from 'Templates/Home'
-import Footer from 'components/Footer'
+import { GetStaticProps } from 'next'
+import HomeTemplate, { AllPostProps } from 'Templates/Home'
 
-export default function Index({ posts, heroPosts }: HomeProps) {
+export default function Index({ posts }: AllPostProps) {
   return (
     <>
-      <Home posts={posts} heroPosts={heroPosts[0]} />
+      <Head title="Início" />
+      <HomeTemplate posts={posts} />
       <Footer />
     </>
   )
@@ -17,12 +19,10 @@ export default function Index({ posts, heroPosts }: HomeProps) {
 
 export const getStaticProps: GetStaticProps = async () => {
   const { posts } = await client.request(GET_HOME_POSTS, { first: 4 })
-  const { heroPosts } = await client.request(GET_HERO_POST)
 
   return {
     props: {
-      posts,
-      heroPosts
+      posts
     }
   }
 }

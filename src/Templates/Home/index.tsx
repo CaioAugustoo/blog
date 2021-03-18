@@ -19,11 +19,11 @@ export type PostsProps = {
   slug: string
 }
 
-export type HomeProps = {
+export type AllPostProps = {
   posts: PostsProps[]
 }
 
-const Home = ({ posts }: HomeProps) => {
+const HomeTemplate = ({ posts }: AllPostProps) => {
   return (
     <main>
       <Container>
@@ -32,20 +32,18 @@ const Home = ({ posts }: HomeProps) => {
           <DarkModeButton />
         </S.Header>
 
-        <S.MorePostSection>
-          <div>
-            {posts.map(({ id, title, excerpt, date, coverImage, slug }) => (
-              <Post
-                key={id}
-                title={title}
-                excerpt={excerpt}
-                date={date}
-                imageUrl={coverImage.url}
-                slug={slug}
-              />
-            ))}
-          </div>
-        </S.MorePostSection>
+        <S.PostSection>
+          {posts.map(({ id, title, excerpt, date, coverImage, slug }) => (
+            <Post
+              key={id}
+              title={title}
+              excerpt={excerpt}
+              date={date}
+              imageUrl={coverImage.url}
+              slug={slug}
+            />
+          ))}
+        </S.PostSection>
         {posts.length > 4 && (
           <Link href="/posts">
             <a>
@@ -58,4 +56,4 @@ const Home = ({ posts }: HomeProps) => {
   )
 }
 
-export default Home
+export default HomeTemplate

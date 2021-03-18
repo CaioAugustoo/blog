@@ -21,11 +21,11 @@ export const Header = styled.header`
   }
 `
 
-export const MorePostSection = styled.section`
+export const PostSection = styled.section`
   ${({ theme }) => css`
     margin: ${theme.spacings.xxlarge} auto ${theme.spacings.medium} auto;
 
-    > div > div:first-child {
+    > div:first-child {
       max-width: 100%;
       display: grid;
       grid-template-columns: 1fr;
