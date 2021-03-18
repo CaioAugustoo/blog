@@ -1,5 +1,5 @@
 import styled, { css, DefaultTheme } from 'styled-components'
-import { HeadingProps } from '.'
+import { HeadingProps } from 'types/api'
 
 const headingModifiers = {
   small: (theme: DefaultTheme) => css`
