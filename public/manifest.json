@@ -14,7 +14,7 @@
     }
   ],
   "background_color": "#ffffff",
-  "description": "Boilerplate utilizando Typescript, React, NextJS e Styled Components!",
+  "description": "Blog pessoal onde são apresentados diversos posts dando dicas de conteúdos relacionados a programação",
   "display": "fullscreen",
   "start_url": "/",
   "theme_color": "#ffffff"
