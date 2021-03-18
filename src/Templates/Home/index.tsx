@@ -1,6 +1,8 @@
-import BigPost from 'components/BigPost'
-import SmallPost from 'components/SmallPost'
+import Post from 'components/Post'
 import Heading from 'components/Heading'
+import Button from 'components/Button'
+import Link from 'next/link'
+import DarkModeButton from 'components/DarkmodeButton'
 
 import { Container } from 'styles/global'
 
@@ -18,40 +20,39 @@ export type PostsProps = {
 }
 
 export type HomeProps = {
-  heroPosts: PostsProps
   posts: PostsProps[]
 }
 
-const Home = ({ posts, heroPosts }: HomeProps) => {
+const Home = ({ posts }: HomeProps) => {
   return (
     <main>
       <Container>
-        <S.HeroSection>
-          <Heading size="huge">Blog.</Heading>
-          <BigPost
-            title={heroPosts.title}
-            excerpt={heroPosts.excerpt}
-            date={heroPosts.date}
-            imageUrl={heroPosts.coverImage.url}
-            slug={heroPosts.slug}
-          />
-        </S.HeroSection>
+        <S.Header>
+          <Heading size="huge">Início</Heading>
+          <DarkModeButton />
+        </S.Header>
 
         <S.MorePostSection>
-          <Heading size="medium">Outros Posts</Heading>
           <div>
-            {posts.map((post) => (
-              <SmallPost
-                key={post.id}
-                title={post.title}
-                excerpt={post.excerpt}
-                date={post.date}
-                imageUrl={post.coverImage.url}
-                slug={post.slug}
+            {posts.map(({ id, title, excerpt, date, coverImage, slug }) => (
+              <Post
+                key={id}
+                title={title}
+                excerpt={excerpt}
+                date={date}
+                imageUrl={coverImage.url}
+                slug={slug}
               />
             ))}
           </div>
         </S.MorePostSection>
+        {posts.length > 4 && (
+          <Link href="/posts">
+            <a>
+              <Button>Todos os Posts</Button>
+            </a>
+          </Link>
+        )}
       </Container>
     </main>
   )

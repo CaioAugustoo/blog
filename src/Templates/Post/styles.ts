@@ -59,6 +59,7 @@ export const Content = styled.div`
       border-width: 1px;
       border: 1px solid #cbd5e0;
       background-color: #f7fafc;
+      border-radius: 5px;
 
       p {
         margin: 0;
@@ -93,12 +94,13 @@ export const PostContentWrapper = styled.article`
   `}
 `
 
-export const BackToHome = styled.div`
+export const Header = styled.header`
   ${({ theme }) => css`
-    margin-bottom: 60px;
-    display: block;
-    width: fit-content;
-    height: fit-content;
+    margin: 30px 0 70px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
 
     a {
       h2 {
