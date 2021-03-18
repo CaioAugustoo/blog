@@ -1,12 +1,19 @@
 import Footer from 'components/Footer'
+
 import client from 'graphql/client'
-import { GET_POST_BY_SLUG } from 'graphql/queries'
+import { GET_POST_BY_SLUG, GET_POSTS_BY_SLUG } from 'graphql/queries'
+
 import { GetStaticProps } from 'next'
 import { useRouter } from 'next/dist/client/router'
+
 import PostTemplate from 'Templates/Post'
 
-export type PostsProps = {
-  posts: {
+export type PostProps = {
+  post: {
+    seo: {
+      title: string
+      description: string
+    }
     coverImage: {
       url: string
     }
@@ -19,21 +26,21 @@ export type PostsProps = {
   }
 }
 
-export default function Post({ posts }: PostsProps) {
+export default function Post({ post }: PostProps) {
   const router = useRouter()
 
   if (router.isFallback) return null
 
   return (
     <>
-      <PostTemplate posts={posts[0]} />
+      <PostTemplate post={post} />
       <Footer />
     </>
   )
 }
 
 export async function getStaticPaths() {
-  const { posts } = await client.request(GET_POST_BY_SLUG, {
+  const { posts } = await client.request(GET_POSTS_BY_SLUG, {
     slug: ''
   })
 
@@ -45,15 +52,16 @@ export async function getStaticPaths() {
 }
 
 export const getStaticProps: GetStaticProps = async ({ params }) => {
-  const { posts } = await client.request(GET_POST_BY_SLUG, {
+  const { post } = await client.request(GET_POST_BY_SLUG, {
     slug: `${params?.slug}`
   })
 
-  if (!posts) return { notFound: true }
+  if (!post) return { notFound: true }
 
   return {
     props: {
-      posts
-    }
+      post
+    },
+    revalidate: 60
   }
 }
