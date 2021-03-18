@@ -1,7 +1,7 @@
 import * as S from './styles'
 import Link from 'next/link'
 
-export type BigPostProps = {
+export type PostProps = {
   title: string
   date: string
   excerpt: string
@@ -9,16 +9,16 @@ export type BigPostProps = {
   imageUrl: string
 }
 
-const BigPost = ({ title, date, excerpt, imageUrl, slug }: BigPostProps) => (
-  <S.Wrapper>
+const Post = ({ title, date, excerpt, imageUrl, slug }: PostProps) => (
+  <S.Post>
     <Link href={`/post/${slug}`}>
       <a aria-label={title}>
         <S.CoverImage src={imageUrl} alt={title} />
       </a>
     </Link>
 
-    <S.PostContent>
-      <div>
+    <S.PostContent className="content">
+      <div className="infos">
         <S.PostTitle>
           <Link href={`/post/${slug}`}>
             <a aria-label={title} title={title}>
@@ -29,9 +29,9 @@ const BigPost = ({ title, date, excerpt, imageUrl, slug }: BigPostProps) => (
 
         <S.Date>{date}</S.Date>
       </div>
-      <S.PostExcerpt>{excerpt}</S.PostExcerpt>
+      <S.PostExcerpt className="excerpt">{excerpt}</S.PostExcerpt>
     </S.PostContent>
-  </S.Wrapper>
+  </S.Post>
 )
 
-export default BigPost
+export default Post

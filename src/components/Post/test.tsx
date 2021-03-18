@@ -1,7 +1,7 @@
 import { screen } from '@testing-library/react'
 import { renderWithTheme } from 'utils/tests/helpers'
 
-import BigPost from '.'
+import Post from '.'
 
 const props = {
   title: 'From Server-side Rendering to Static Generation',
@@ -13,9 +13,9 @@ const props = {
   slug: '/post/testando-projeto'
 }
 
-describe('<BigPost />', () => {
+describe('<Post />', () => {
   it('should render the post title', () => {
-    const { container } = renderWithTheme(<BigPost {...props} />)
+    const { container } = renderWithTheme(<Post {...props} />)
 
     expect(
       screen.getByRole('heading', {
@@ -27,7 +27,7 @@ describe('<BigPost />', () => {
   })
 
   it('should render the excerpt', () => {
-    const { container } = renderWithTheme(<BigPost {...props} />)
+    const { container } = renderWithTheme(<Post {...props} />)
 
     expect(screen.getByText(props.excerpt)).toBeInTheDocument()
 
@@ -35,7 +35,7 @@ describe('<BigPost />', () => {
   })
 
   it('should render the date', () => {
-    const { container } = renderWithTheme(<BigPost {...props} />)
+    const { container } = renderWithTheme(<Post {...props} />)
 
     expect(screen.getByText(props.date)).toBeInTheDocument()
 
