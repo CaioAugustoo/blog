@@ -57,15 +57,23 @@ export const Content = styled.div`
       overflow-x: auto;
       padding: ${theme.spacings.xsmall};
       font-size: 1.2rem;
-      line-height: 1.2;
       border-width: 1px;
       border: 1px solid #cbd5e0;
       background-color: #f7fafc;
       border-radius: 5px;
 
+      ::-webkit-scrollbar {
+        height: 6px;
+        border-radius: 100px;
+      }
+
+      ::-webkit-scrollbar-thumb {
+        border-radius: 100px;
+        background: #cbd5e0;
+      }
+
       p {
         margin: 0;
-        line-height: 1;
         font-family: Menlo, Monaco, Consolas, Liberation Mono, Courier New,
           monospace;
         font-size: 1.5rem;
@@ -87,7 +95,7 @@ export const PostContentWrapper = styled.article`
     padding: ${theme.spacings.medium} 0 ${theme.spacings.xxlarge} 0;
 
     img {
-      margin: 0px auto 120px;
+      margin: 0px auto 60px;
 
       @media (max-width: 765px) {
         margin: 0px auto 0px;
@@ -124,7 +132,8 @@ export const Header = styled.header`
 
 export const InfosWrapper = styled.div`
   ${({ theme }) => css`
-    margin: ${theme.spacings.xlarge} 0;
+    margin: ${theme.spacings.xlarge} auto;
+    max-width: 750px;
 
     h2 {
       font-size: 4.4rem;
@@ -145,6 +154,17 @@ export const Infos = styled.div`
     p {
       margin: 0 ${theme.spacings.xxsmall};
       font-size: ${theme.font.sizes.large};
+    }
+  `}
+`
+
+export const NavigateToHome = styled.div`
+  ${({ theme }) => css`
+    margin: ${theme.spacings.xxlarge} 0 ${theme.spacings.xsmall} 0;
+    font-size: ${theme.font.sizes.large};
+
+    &:hover {
+      text-decoration: underline;
     }
   `}
 `

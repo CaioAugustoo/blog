@@ -23,7 +23,6 @@ export const Header = styled.header`
 
 export const PostSection = styled.section`
   ${({ theme }) => css`
-    margin: ${theme.spacings.xxlarge} auto ${theme.spacings.medium} auto;
     display: grid;
     grid-template-areas:
       'hero hero'
