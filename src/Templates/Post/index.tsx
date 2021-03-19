@@ -39,6 +39,15 @@ const PostTemplate = ({ post }: PostBySlugProps) => {
             <S.Content
               dangerouslySetInnerHTML={{ __html: `${post?.content?.html}` }}
             />
+
+            <Link href="/">
+              <a
+                title="Voltar para página inicial"
+                aria-label="Voltar para página inicial"
+              >
+                <S.NavigateToHome>← Voltar para o início</S.NavigateToHome>
+              </a>
+            </Link>
           </S.PostContentWrapper>
         </Container>
       </S.Wrapper>
