@@ -23,9 +23,8 @@ const GlobalStyles = createGlobalStyle`
       }
     }
 
-    ul,
-    li {
-      list-style: none;
+    ul {
+      padding-left: 20px;
     }
     a {
       text-decoration: none;
