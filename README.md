@@ -1,58 +1,53 @@
+# ⚡️ Blog
 
-![React Avançado](https://raw.githubusercontent.com/React-Avancado/boilerplate/master/public/img/logo-gh.svg)
+Blog pessoal desenvolvido com Next.js e TypeScript
+## ℹ️ Sobre o projeto
 
-This is a [Next.js](https://nextjs.org/) boilerplate to be used in a course called [React Avançado](https://reactavancado.com.br/).
-![ci](https://github.com/React-Avancado/boilerplate/workflows/ci/badge.svg)
-## What is inside?
+Este projeto consiste em um blog pessoal, onde futuramente farei posts dando dicas e passando conhecimentos que eu adquiri e que irei adquirindo ao longo de minha carreira.
 
-This project uses lot of stuff as:
+## ✨ Demonstração
 
-- [TypeScript](https://www.typescriptlang.org/)
-- [NextJS](https://nextjs.org/)
-- [Styled Components](https://styled-components.com/)
+Veja abaixo uma foto do projeto.
+![Image from Gyazo](https://i.gyazo.com/850d588d2e4d24f33a1a5b74ffb1af42.png)
+
+Você pode conferir o resultado final em: https://caio-blog.vercel.app/
+
+## 🎯 Objetivo do projeto
+
+Foi realizado este projeto com o intuito de aplicar os conhecimentos adquiridos com Next.js e TypeScript.
+
+## 📝 Tecnologias
+
+Para a realização desse projeto foi utilizado as seguintes tecnologias/linguagens:
+
+- [React.js](https://pt-br.reactjs.org)
+- [Next.js](https://nextjs.org)
+- [styled-components](https://styled-components.com/)
+- [next-pwa](https://www.npmjs.com/package/next-pwa)
+- [Testing library](https://testing-library.com/)
+- [Plop.js](https://plopjs.com/)
 - [Jest](https://jestjs.io/)
-- [React Testing Library](https://testing-library.com/docs/react-testing-library/intro)
-- [Storybook](https://storybook.js.org/)
-- [Eslint](https://eslint.org/)
-- [Prettier](https://prettier.io/)
-- [Husky](https://github.com/typicode/husky)
+- [use-dark-mode](https://github.com/donavon/use-dark-mode)
+- [TypeScript](https://www.typescriptlang.org/)
+- [GraphCMS](https://graphcms.com/)
+- [GraphQL](https://graphql.org/)
 
-## Getting Started
+## ⚙️ Instalação
 
-First, run the development server:
+Para que este rode em sua máquina, siga os passos abaixo:
 
 ```bash
-npm run dev
-# or
-yarn dev
+# Clone o repositório em alguma pasta em sua máquina
+$ git clone https://github.com/CaioAugustoo/nextjs_blog
+
+# Entre no repositório
+$ cd nextjs_blog
+
+Instale as dependencias digitando no termimal:
+$ yarn install
+
+Rode a aplicação no modo de desenvolvimento.
+$ yarn dev
+
+Abra http://localhost:3000 no seu navegador para visualizar o projeto
 ```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
-
-## Commands
-
-- `dev`: runs your application on `localhost:3000`
-- `build`: creates the production build version
-- `start`: starts a simple server with the build production code
-- `lint`: runs the linter in all components and pages
-- `test`: runs jest to test all components and pages
-- `test:watch`: runs jest in watch mode
-- `storybook`: runs storybook on `localhost:6006`
-- `build-storybook`: create the build version of storybook
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/import?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
