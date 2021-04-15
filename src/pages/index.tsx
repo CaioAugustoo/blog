@@ -1,6 +1,5 @@
 import { GetStaticProps } from 'next'
 
-import Footer from 'components/Footer'
 import HomeTemplate from 'Templates/Home'
 
 import client from 'graphql/client'
@@ -9,12 +8,7 @@ import { GET_HOME_POSTS } from 'graphql/queries'
 import { PostsProps } from 'types/api'
 
 export default function Index({ posts }: PostsProps) {
-  return (
-    <>
-      <HomeTemplate posts={posts} />
-      <Footer />
-    </>
-  )
+  return <HomeTemplate posts={posts} />
 }
 
 export const getStaticProps: GetStaticProps = async () => {
@@ -24,6 +18,6 @@ export const getStaticProps: GetStaticProps = async () => {
     props: {
       posts
     },
-    revalidate: 60
+    revalidate: 600
   }
 }

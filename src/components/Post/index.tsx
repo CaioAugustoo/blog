@@ -4,21 +4,8 @@ import * as S from './styles'
 
 import { PostProps } from 'types/api'
 
-const Post = ({
-  title,
-  date,
-  excerpt,
-  coverImage,
-  slug,
-  minuteRead
-}: PostProps) => (
+const Post = ({ title, date, excerpt, slug, minuteRead }: PostProps) => (
   <S.Post>
-    <Link href={`/post/${slug}`}>
-      <a aria-label={title}>
-        <S.CoverImage src={coverImage?.url} alt={title} />
-      </a>
-    </Link>
-
     <S.PostContent className="content">
       <div className="infos">
         <S.PostTitle>

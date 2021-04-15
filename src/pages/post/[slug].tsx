@@ -1,7 +1,6 @@
 import { GetStaticProps } from 'next'
 import { useRouter } from 'next/dist/client/router'
 
-import Footer from 'components/Footer'
 import PostTemplate from 'Templates/Post'
 
 import client from 'graphql/client'
@@ -14,12 +13,7 @@ export default function Post({ post }: PostBySlugProps) {
 
   if (isFallback) return null
 
-  return (
-    <>
-      <PostTemplate post={post} />
-      <Footer />
-    </>
-  )
+  return <PostTemplate post={post} />
 }
 
 export async function getStaticPaths() {
@@ -45,6 +39,6 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
     props: {
       post
     },
-    revalidate: 60
+    revalidate: 600
   }
 }

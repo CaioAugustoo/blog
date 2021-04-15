@@ -2,35 +2,10 @@ import styled, { css } from 'styled-components'
 
 export const Post = styled.div`
   ${({ theme }) => css`
-    margin: ${theme.spacings.xlarge} 0;
+    margin: ${theme.spacings.xlarge} 0 ${theme.spacings.xxlarge} 0;
     width: 100%;
 
-    max-width: 600px;
-
-    &:nth-child(3n) {
-      margin-left: auto;
-    }
-
-    &:nth-child(2n) {
-      margin-right: auto;
-    }
-
-    @media (max-width: 1250px) {
-      max-width: 500px;
-    }
-
-    @media (max-width: 1069px) {
-      max-width: 450px;
-    }
-
-    @media (max-width: 965px) {
-      max-width: 400px;
-    }
-
-    @media (max-width: 865px) {
-      max-width: 100%;
-      margin: ${theme.spacings.small} 0;
-    }
+    max-width: 800px;
   `}
 `
 

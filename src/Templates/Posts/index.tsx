@@ -1,4 +1,3 @@
-import DarkModeButton from 'components/DarkmodeButton'
 import Head from 'components/Head'
 import Heading from 'components/Heading'
 import Post from 'components/Post'
@@ -6,8 +5,6 @@ import Post from 'components/Post'
 import { Header } from 'Templates/Post/styles'
 import { Container } from 'styles/global'
 import { PostsProps } from 'types/api'
-
-import * as S from './styles'
 
 import Link from 'next/link'
 
@@ -27,24 +24,20 @@ const PostsTemplate = ({ posts }: PostsProps) => {
               </a>
             </Link>
           </nav>
-          <DarkModeButton />
         </Header>
         <Heading size="huge">Todos os posts</Heading>
-        <S.Wrapper>
-          {posts.map(
-            ({ id, title, coverImage, date, excerpt, slug, minuteRead }) => (
-              <Post
-                key={id}
-                title={title}
-                coverImage={coverImage}
-                date={date}
-                excerpt={excerpt}
-                slug={slug}
-                minuteRead={minuteRead}
-              />
-            )
-          )}
-        </S.Wrapper>
+        <main>
+          {posts.map(({ id, title, date, excerpt, slug, minuteRead }) => (
+            <Post
+              key={id}
+              title={title}
+              date={date}
+              excerpt={excerpt}
+              slug={slug}
+              minuteRead={minuteRead}
+            />
+          ))}
+        </main>
       </Container>
     </>
   )
