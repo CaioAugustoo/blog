@@ -2,102 +2,63 @@
 
 exports[`<Post /> should render the date 1`] = `
 .c0 {
-  margin: 4.8rem 0;
+  margin: 4.8rem 0 5.6rem 0;
   width: 100%;
-  max-width: 600px;
-}
-
-.c0:nth-child(3n) {
-  margin-left: auto;
-}
-
-.c0:nth-child(2n) {
-  margin-right: auto;
+  max-width: 800px;
 }
 
 .c1 {
-  max-width: 100%;
-  width: 100%;
-  box-shadow: 0 5px 70px rgb(0 0 0 / 5%);
-}
-
-.c2 {
   margin: 1.6rem 0;
 }
 
-.c3 {
+.c2 {
   font-size: 3rem;
   line-height: 1.2;
   margin-bottom: 1.6rem;
   font-weight: 400;
 }
 
-.c3:hover a {
+.c2:hover a {
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-.c7 {
+.c6 {
   font-size: 1.8rem;
   line-height: 1.625;
   margin: 1.6rem 0;
 }
 
-.c6 {
+.c5 {
   font-size: 1.8rem;
   margin-right: 0.8rem;
 }
 
-.c4 h2 {
+.c3 h2 {
   font-size: 4.4rem;
   text-align: center;
 }
 
-.c5 {
+.c4 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
 }
 
-.c5 p {
+.c4 p {
   margin: 0 0.8rem;
   font-size: 1.8rem;
 }
 
-@media (max-width:1250px) {
-  .c0 {
-    max-width: 500px;
-  }
-}
-
-@media (max-width:1069px) {
-  .c0 {
-    max-width: 450px;
-  }
-}
-
-@media (max-width:965px) {
-  .c0 {
-    max-width: 400px;
-  }
-}
-
-@media (max-width:865px) {
-  .c0 {
-    max-width: 100%;
-    margin: 2.4rem 0;
-  }
-}
-
 @media (max-width:765px) {
-  .c3 {
+  .c2 {
     font-size: 3.6rem;
   }
 }
 
 @media (max-width:765px) {
-  .c4 h2 {
+  .c3 h2 {
     font-size: 3.6rem;
   }
 }
@@ -108,20 +69,15 @@ exports[`<Post /> should render the date 1`] = `
   <a
     aria-label="From Server-side Rendering to Static Generation"
     href="/post//post/testando-projeto"
-  >
-    <img
-      alt="From Server-side Rendering to Static Generation"
-      class="c1"
-    />
-  </a>
+  />
   <div
-    class="c2 content"
+    class="c1 content"
   >
     <div
       class="infos"
     >
       <h3
-        class="c3"
+        class="c2"
       >
         <a
           aria-label="From Server-side Rendering to Static Generation"
@@ -132,13 +88,13 @@ exports[`<Post /> should render the date 1`] = `
         </a>
       </h3>
       <div
-        class="c4"
+        class="c3"
       >
         <div
-          class="c5"
+          class="c4"
         >
           <time
-            class="c6"
+            class="c5"
           >
             May 21, 2020
           </time>
@@ -151,7 +107,7 @@ exports[`<Post /> should render the date 1`] = `
       </div>
     </div>
     <p
-      class="c7 excerpt"
+      class="c6 excerpt"
     >
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Praesent elementum facilisis leo vel fringilla est ullamcorper eget. At imperdiet dui accumsan sit amet nulla facilisi morbi tempus.
     </p>
@@ -161,102 +117,63 @@ exports[`<Post /> should render the date 1`] = `
 
 exports[`<Post /> should render the excerpt 1`] = `
 .c0 {
-  margin: 4.8rem 0;
+  margin: 4.8rem 0 5.6rem 0;
   width: 100%;
-  max-width: 600px;
-}
-
-.c0:nth-child(3n) {
-  margin-left: auto;
-}
-
-.c0:nth-child(2n) {
-  margin-right: auto;
+  max-width: 800px;
 }
 
 .c1 {
-  max-width: 100%;
-  width: 100%;
-  box-shadow: 0 5px 70px rgb(0 0 0 / 5%);
-}
-
-.c2 {
   margin: 1.6rem 0;
 }
 
-.c3 {
+.c2 {
   font-size: 3rem;
   line-height: 1.2;
   margin-bottom: 1.6rem;
   font-weight: 400;
 }
 
-.c3:hover a {
+.c2:hover a {
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-.c7 {
+.c6 {
   font-size: 1.8rem;
   line-height: 1.625;
   margin: 1.6rem 0;
 }
 
-.c6 {
+.c5 {
   font-size: 1.8rem;
   margin-right: 0.8rem;
 }
 
-.c4 h2 {
+.c3 h2 {
   font-size: 4.4rem;
   text-align: center;
 }
 
-.c5 {
+.c4 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
 }
 
-.c5 p {
+.c4 p {
   margin: 0 0.8rem;
   font-size: 1.8rem;
 }
 
-@media (max-width:1250px) {
-  .c0 {
-    max-width: 500px;
-  }
-}
-
-@media (max-width:1069px) {
-  .c0 {
-    max-width: 450px;
-  }
-}
-
-@media (max-width:965px) {
-  .c0 {
-    max-width: 400px;
-  }
-}
-
-@media (max-width:865px) {
-  .c0 {
-    max-width: 100%;
-    margin: 2.4rem 0;
-  }
-}
-
 @media (max-width:765px) {
-  .c3 {
+  .c2 {
     font-size: 3.6rem;
   }
 }
 
 @media (max-width:765px) {
-  .c4 h2 {
+  .c3 h2 {
     font-size: 3.6rem;
   }
 }
@@ -267,20 +184,15 @@ exports[`<Post /> should render the excerpt 1`] = `
   <a
     aria-label="From Server-side Rendering to Static Generation"
     href="/post//post/testando-projeto"
-  >
-    <img
-      alt="From Server-side Rendering to Static Generation"
-      class="c1"
-    />
-  </a>
+  />
   <div
-    class="c2 content"
+    class="c1 content"
   >
     <div
       class="infos"
     >
       <h3
-        class="c3"
+        class="c2"
       >
         <a
           aria-label="From Server-side Rendering to Static Generation"
@@ -291,13 +203,13 @@ exports[`<Post /> should render the excerpt 1`] = `
         </a>
       </h3>
       <div
-        class="c4"
+        class="c3"
       >
         <div
-          class="c5"
+          class="c4"
         >
           <time
-            class="c6"
+            class="c5"
           >
             May 21, 2020
           </time>
@@ -310,7 +222,7 @@ exports[`<Post /> should render the excerpt 1`] = `
       </div>
     </div>
     <p
-      class="c7 excerpt"
+      class="c6 excerpt"
     >
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Praesent elementum facilisis leo vel fringilla est ullamcorper eget. At imperdiet dui accumsan sit amet nulla facilisi morbi tempus.
     </p>
@@ -320,102 +232,63 @@ exports[`<Post /> should render the excerpt 1`] = `
 
 exports[`<Post /> should render the post title 1`] = `
 .c0 {
-  margin: 4.8rem 0;
+  margin: 4.8rem 0 5.6rem 0;
   width: 100%;
-  max-width: 600px;
-}
-
-.c0:nth-child(3n) {
-  margin-left: auto;
-}
-
-.c0:nth-child(2n) {
-  margin-right: auto;
+  max-width: 800px;
 }
 
 .c1 {
-  max-width: 100%;
-  width: 100%;
-  box-shadow: 0 5px 70px rgb(0 0 0 / 5%);
-}
-
-.c2 {
   margin: 1.6rem 0;
 }
 
-.c3 {
+.c2 {
   font-size: 3rem;
   line-height: 1.2;
   margin-bottom: 1.6rem;
   font-weight: 400;
 }
 
-.c3:hover a {
+.c2:hover a {
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-.c7 {
+.c6 {
   font-size: 1.8rem;
   line-height: 1.625;
   margin: 1.6rem 0;
 }
 
-.c6 {
+.c5 {
   font-size: 1.8rem;
   margin-right: 0.8rem;
 }
 
-.c4 h2 {
+.c3 h2 {
   font-size: 4.4rem;
   text-align: center;
 }
 
-.c5 {
+.c4 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
 }
 
-.c5 p {
+.c4 p {
   margin: 0 0.8rem;
   font-size: 1.8rem;
 }
 
-@media (max-width:1250px) {
-  .c0 {
-    max-width: 500px;
-  }
-}
-
-@media (max-width:1069px) {
-  .c0 {
-    max-width: 450px;
-  }
-}
-
-@media (max-width:965px) {
-  .c0 {
-    max-width: 400px;
-  }
-}
-
-@media (max-width:865px) {
-  .c0 {
-    max-width: 100%;
-    margin: 2.4rem 0;
-  }
-}
-
 @media (max-width:765px) {
-  .c3 {
+  .c2 {
     font-size: 3.6rem;
   }
 }
 
 @media (max-width:765px) {
-  .c4 h2 {
+  .c3 h2 {
     font-size: 3.6rem;
   }
 }
@@ -426,20 +299,15 @@ exports[`<Post /> should render the post title 1`] = `
   <a
     aria-label="From Server-side Rendering to Static Generation"
     href="/post//post/testando-projeto"
-  >
-    <img
-      alt="From Server-side Rendering to Static Generation"
-      class="c1"
-    />
-  </a>
+  />
   <div
-    class="c2 content"
+    class="c1 content"
   >
     <div
       class="infos"
     >
       <h3
-        class="c3"
+        class="c2"
       >
         <a
           aria-label="From Server-side Rendering to Static Generation"
@@ -450,13 +318,13 @@ exports[`<Post /> should render the post title 1`] = `
         </a>
       </h3>
       <div
-        class="c4"
+        class="c3"
       >
         <div
-          class="c5"
+          class="c4"
         >
           <time
-            class="c6"
+            class="c5"
           >
             May 21, 2020
           </time>
@@ -469,7 +337,7 @@ exports[`<Post /> should render the post title 1`] = `
       </div>
     </div>
     <p
-      class="c7 excerpt"
+      class="c6 excerpt"
     >
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Praesent elementum facilisis leo vel fringilla est ullamcorper eget. At imperdiet dui accumsan sit amet nulla facilisi morbi tempus.
     </p>

@@ -13,12 +13,6 @@ export const Wrapper = styled.main`
   }
 `
 
-export const CoverImage = styled.img`
-  width: 900px;
-  max-width: 100%;
-  box-shadow: 0 5px 70px rgb(0 0 0 / 12%);
-`
-
 export const Content = styled.div`
   ${({ theme }) => css`
     p {
@@ -92,7 +86,7 @@ export const Content = styled.div`
 
 export const PostContentWrapper = styled.article`
   ${({ theme }) => css`
-    padding: ${theme.spacings.medium} 0 ${theme.spacings.xxlarge} 0;
+    padding: 0 0 ${theme.spacings.xxlarge} 0;
 
     img {
       margin: 0px auto 60px;
@@ -100,10 +94,6 @@ export const PostContentWrapper = styled.article`
       @media (max-width: 765px) {
         margin: 0px auto 0px;
       }
-    }
-
-    @media (max-width: 765px) {
-      padding: ${theme.spacings.xsmall} 0;
     }
   `}
 `
@@ -132,7 +122,7 @@ export const Header = styled.header`
 
 export const InfosWrapper = styled.div`
   ${({ theme }) => css`
-    margin: ${theme.spacings.xlarge} auto;
+    margin: 0 auto;
     max-width: 750px;
 
     h2 {

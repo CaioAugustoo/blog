@@ -18,7 +18,6 @@ function App({ Component, pageProps }: AppProps) {
           content="Blog pessoal onde são apresentados diversos posts dando dicas de conteúdos relacionados a programação"
         />
       </Head>
-
       <Component {...pageProps} />
       <GlobalStyles />
     </ThemeProvider>
