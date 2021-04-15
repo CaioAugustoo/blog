@@ -6,12 +6,7 @@ export type PostProps = {
   slug: string
   minuteRead: number
   seo?: HeadProps
-  coverImage?: CoverImageProps
   content?: { html: string }
-}
-
-export type CoverImageProps = {
-  url: string
 }
 
 export type PostBySlugProps = {

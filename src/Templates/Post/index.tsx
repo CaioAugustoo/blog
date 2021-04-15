@@ -1,7 +1,6 @@
 import Link from 'next/link'
 
 import Heading from 'components/Heading'
-import DarkModeButton from 'components/DarkmodeButton'
 import Head from 'components/Head'
 
 import { Container } from 'styles/global'
@@ -26,7 +25,6 @@ const PostTemplate = ({ post }: PostBySlugProps) => {
                 </a>
               </Link>
             </nav>
-            <DarkModeButton />
           </S.Header>
           <S.InfosWrapper>
             <Heading>{post.title}</Heading>
@@ -35,7 +33,6 @@ const PostTemplate = ({ post }: PostBySlugProps) => {
             </S.Infos>
           </S.InfosWrapper>
           <S.PostContentWrapper>
-            <S.CoverImage src={post?.coverImage?.url} alt={post.title} />
             <S.Content
               dangerouslySetInnerHTML={{ __html: `${post?.content?.html}` }}
             />

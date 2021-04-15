@@ -9,9 +9,6 @@ export const GET_HOME_POSTS = gql`
       date
       slug
       minuteRead
-      coverImage {
-        url
-      }
     }
   }
 `
@@ -22,9 +19,6 @@ export const GET_POST_BY_SLUG = gql`
       seo {
         title
         description
-      }
-      coverImage {
-        url
       }
       slug
       date
@@ -54,9 +48,6 @@ export const GET_ALL_POSTS = gql`
       date
       slug
       minuteRead
-      coverImage {
-        url
-      }
     }
   }
 `
