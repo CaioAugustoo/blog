@@ -8,7 +8,7 @@ Este projeto consiste em um blog pessoal, onde futuramente farei posts dando dic
 ## ✨ Demonstração
 
 Veja abaixo uma foto do projeto.
-![Image from Gyazo](https://i.gyazo.com/850d588d2e4d24f33a1a5b74ffb1af42.png)
+[![Image from Gyazo](https://i.gyazo.com/6c213ece8f06b54162fb881fc3dfde7f.png)](https://gyazo.com/6c213ece8f06b54162fb881fc3dfde7f)
 
 Você pode conferir o resultado final em: https://caio-blog.vercel.app/
 
@@ -20,14 +20,11 @@ Foi realizado este projeto com o intuito de aplicar os conhecimentos adquiridos 
 
 Para a realização desse projeto foi utilizado as seguintes tecnologias/linguagens:
 
-- [React.js](https://pt-br.reactjs.org)
 - [Next.js](https://nextjs.org)
 - [styled-components](https://styled-components.com/)
-- [next-pwa](https://www.npmjs.com/package/next-pwa)
 - [Testing library](https://testing-library.com/)
 - [Plop.js](https://plopjs.com/)
 - [Jest](https://jestjs.io/)
-- [use-dark-mode](https://github.com/donavon/use-dark-mode)
 - [TypeScript](https://www.typescriptlang.org/)
 - [GraphCMS](https://graphcms.com/)
 - [GraphQL](https://graphql.org/)
