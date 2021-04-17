@@ -15,11 +15,6 @@ const GlobalStyles = createGlobalStyle`
     body {
       font-family: ${theme.font.family};
       font-size: ${theme.font.sizes.medium};
-
-        &.dark-mode {
-          background: #111216;
-          color: #fff;
-        }
       }
     }
 
@@ -35,31 +30,6 @@ const GlobalStyles = createGlobalStyle`
       display: block;
       max-width: 100%:
       height: auto;
-    }
-
-    &.dark-mode   {
-      h1, h2, h3, h4, h5, h6, a {
-        color: #fff;
-      }
-
-      div blockquote {
-        border-left: 4px solid #fff;
-      }
-
-      button {
-        background: transparent;
-        color: #fff;
-      }
-
-      footer {
-        background: #111216;
-        border-top: 1px solid #1c1c1c;
-      }
-
-      & div > .code {
-        background: #292c34;
-        border: none;
-      }
     }
   `}
 `

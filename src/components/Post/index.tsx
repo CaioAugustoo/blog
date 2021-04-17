@@ -6,7 +6,7 @@ import { PostProps } from 'types/api'
 
 const Post = ({ title, date, excerpt, slug, minuteRead }: PostProps) => (
   <S.Post>
-    <S.PostContent className="content">
+    <S.PostContent>
       <div className="infos">
         <S.PostTitle>
           <Link href={`/post/${slug}`}>
@@ -22,7 +22,7 @@ const Post = ({ title, date, excerpt, slug, minuteRead }: PostProps) => (
           </S.Infos>
         </S.InfosWrapper>
       </div>
-      <S.PostExcerpt className="excerpt">{excerpt}</S.PostExcerpt>
+      <S.PostExcerpt>{excerpt}</S.PostExcerpt>
     </S.PostContent>
   </S.Post>
 )
