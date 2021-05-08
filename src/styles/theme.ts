@@ -25,7 +25,7 @@ export default {
     }
   },
   colors: {
-    lightBg: '#FAFAFA',
+    bg: '#0d0e11',
     white: '#FFFFFF',
     black: '#000000'
   },

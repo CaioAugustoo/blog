@@ -13,8 +13,10 @@ const GlobalStyles = createGlobalStyle`
       font-size: 62.5%;
     }
     body {
+      background-color: ${theme.colors.bg};
       font-family: ${theme.font.family};
       font-size: ${theme.font.sizes.medium};
+      color: ${theme.colors.white};
       }
     }
 
@@ -23,7 +25,7 @@ const GlobalStyles = createGlobalStyle`
     }
     a {
       text-decoration: none;
-      color: ${theme.colors.black};
+      color: ${theme.colors.white};
     }
 
     img {

@@ -22,7 +22,7 @@ export const Content = styled.div`
     }
 
     a {
-      color: #0070f3;
+      color: #47c8ff;
 
       &:hover {
         text-decoration: underline;
@@ -39,7 +39,7 @@ export const Content = styled.div`
     }
 
     blockquote {
-      border-left: 4px solid #000;
+      border-left: 4px solid #1d1d26;
       padding: 1rem 1.5rem;
       font-style: italic;
       font-size: 1.9rem;
@@ -52,8 +52,8 @@ export const Content = styled.div`
       padding: ${theme.spacings.xsmall};
       font-size: 1.2rem;
       border-width: 1px;
-      border: 1px solid #cbd5e0;
-      background-color: #f7fafc;
+      border: 1px solid #15151c;
+      background-color: #1d1d26;
       border-radius: 5px;
 
       ::-webkit-scrollbar {
@@ -63,7 +63,7 @@ export const Content = styled.div`
 
       ::-webkit-scrollbar-thumb {
         border-radius: 100px;
-        background: #cbd5e0;
+        background: #15151c;
       }
 
       p {
@@ -76,7 +76,12 @@ export const Content = styled.div`
 
     .intro {
       margin: ${theme.spacings.xsmall} 0;
-      border-bottom: 1px solid #d1dce5;
+      border-bottom: 1px solid #1d1d26;
+    }
+
+    ul li {
+      font-size: ${theme.font.sizes.medium};
+      margin: ${theme.spacings.xsmall} 0;
     }
 
     max-width: 66rem;

@@ -18,6 +18,7 @@ export const Heading = styled.h2<HeadingProps>`
   ${({ theme, size }) => css`
     ${!!size && headingModifiers[size](theme)};
     margin: ${theme.spacings.medium} 0;
+    color: ${theme.colors.white};
 
     @media (max-width: 765px) {
       font-size: ${theme.font.sizes.xxlarge};
