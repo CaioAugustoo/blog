@@ -8,7 +8,7 @@ Este projeto consiste em um blog pessoal, onde futuramente farei posts dando dic
 ## ✨ Demonstração
 
 Veja abaixo uma foto do projeto.
-[![Image from Gyazo](https://i.gyazo.com/6c213ece8f06b54162fb881fc3dfde7f.png)](https://gyazo.com/6c213ece8f06b54162fb881fc3dfde7f)
+[![Image from Gyazo](https://i.gyazo.com/18b3c4018ceddd284710a821dd70c788.png)](https://gyazo.com/18b3c4018ceddd284710a821dd70c788)
 
 Você pode conferir o resultado final em: https://caio-blog.vercel.app/
 
@@ -35,10 +35,10 @@ Para que este rode em sua máquina, siga os passos abaixo:
 
 ```bash
 # Clone o repositório em alguma pasta em sua máquina
-$ git clone https://github.com/CaioAugustoo/nextjs_blog
+$ git clone https://github.com/CaioAugustoo/blog.git
 
 # Entre no repositório
-$ cd nextjs_blog
+$ cd blog
 
 Instale as dependências digitando no termimal:
 $ yarn install
