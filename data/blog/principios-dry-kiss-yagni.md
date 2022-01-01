@@ -147,4 +147,4 @@ Princípios são obrigatórios quando você quer desenvolver um software que pro
 Dado o contexto, quis escrever este post para ajudar aqueles que tentam escrever um código mais conciso, objetivo e limpo. Caso você ainda seja iniciante, não se preocupe em escrever o código mais lindo do mundo. Apenas faça funcionar, depois pense na refatoração.
 
 Referências: https://pt.wikipedia.org/wiki/Princ%C3%ADpio_KISS, https://harve.com.br/blog/marketing-digital-blog/keep-it-simple-but-sensational-o-principio-kiss-para-impactar/,
-https://www.thiengo.com.br/kiss-mantenha-isso-estupidamente-simples, http://www.macoratti.net/16/04/net_dry1.htm, http://www.macoratti.net/15/12/net_yagni1.htm#:~:text=%22You%20aren't%20gonna%20need%20it%22%20(YAGNI),prever%20que%20vai%20precisar%20delas%22.
+https://www.thiengo.com.br/kiss-mantenha-isso-estupidamente-simples, http://www.macoratti.net/16/04/net_dry1.htm, encurtador.com.br/tuEHY
