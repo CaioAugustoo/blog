@@ -16,7 +16,7 @@ Caso você queira ir para um tópico específico:
 
 JavaScript contém muitas coisas - muitos métodos e maneiras diferentes de fazer as coisas. Como você se lembra de todos eles?
 
-_Primeiro de tudo, gostaria de dizer que esse post é uma tradução do [post do Zell](https://zellwk.com/blog/remember-javascript/), no qual o mesmo me autorizou a tradução deste. Então, Obrigado, Zell Liew!!_
+_Primeiro de tudo, gostaria de dizer que esse post é uma tradução do [post do Zell](https://zellwk.com/blog/remember-javascript/), no qual o mesmo me autorizou a tradução deste_
 
 Se você perguntar em grupos de Facebook ou para amigos, grande parte dessas pessoas dirão que você não precisa decorar tudo (tanto no JavaScript quanto em outra linguagem), pois você sempre tem a documentação e o Google para pesquisar. Mas essa resposta não ajuda - você nem sempre pode pesquisar tudo no Google todas as vezes. Caso você esqueça absolutamente de tudo e gaste seu maior tempo fazendo pesquisas, no final você verá que mais pesquisou do que codificou.
 
@@ -54,6 +54,6 @@ Dito isso, lembre-se de ser gentil consigo mesmo - não se culpe por esquecer, n
 
 ## Conclusão
 
-Eu, Caio, já estava querendo muito escrever um post como esse. Quando eu estava navegando pelo meu e-mail, recebi um novo e-mail do Zell, pois eu acompanho a newsletter dele. O titulo do post me chamou bastante atenção, e como mencionei lá em cima, ele me autorizou a escrever sobre este post. Mais uma vez, gostaria de agradecer ao Zell. Caso você tenha interesse em [ler as outras postagens do blog dele](https://zellwk.com/blog/), sinta-se livre para conferir. Eu super recomendo!
+Eu já estava querendo muito escrever um post com esse tema. Quando eu estava navegando pelo meu e-mail recebi um novo e-mail do Zell, pois eu acompanho a newsletter dele. O titulo do post me chamou bastante atenção, e como mencionei anteriormente, ele me autorizou a escrever sobre este post. Mais uma vez, gostaria de agradecer ao Zell. Caso você tenha interesse em [ler as outras postagens do blog dele](https://zellwk.com/blog/), sinta-se livre para conferir.
 
 Referência: https://zellwk.com/blog/remember-javascript/?ck_subscriber_id=1228092494
